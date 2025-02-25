@@ -1,0 +1,35 @@
+body{
+    background-color: aqua;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+}
+
+header h1{
+    font-family: Comfortaa;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 32.4px;
+    letter-spacing: 0px;
+
+}
+
+
+header nav ul{
+    display: flex;
+}
+
+header nav ul li{
+    margin: 0 10%;
+
+    color: #fff;
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+}
