@@ -1,5 +1,9 @@
 /* Header style */
 
+body{
+    background-color: #f9faff;
+}
+
 header{
     display: flex;
     justify-content: space-between;
@@ -23,17 +27,26 @@ header h1{
 
 header nav ul{
     display: flex;
+    gap: 25%;
 }
 
-header nav ul li{
-    margin: 0 10%;
-
+header nav ul a{
+    /* margin: 0 10%; */
+    
     color: #fff;
     font-family: Raleway;
     font-weight: 500;
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+header nav ul a:hover{
+    transform: scale(1.1);
+    color: fff;
 }
 
 /* Main Style */
@@ -45,7 +58,7 @@ main #about{
 }
 
 main #about .aboutTxt{
-    width: 480px;
+    max-width: 480px;
 }
 
 main #about .aboutTxt .txtField h2{
@@ -108,3 +121,78 @@ main #about .aboutImg img{
 }
 
 /* Projects Style */
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+#projects .projectsTitle{
+    border-bottom: #25282B solid 3px;
+}
+
+#projects .projectsTitle h2{
+    font-family: Playfair Display;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    letter-spacing: 0%;    
+}
+
+#projects .panels{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 24px;
+    width: 55%;
+    margin: 2.5% 0;
+    box-shadow: #a8a8a8 4px 4px 24px;
+}
+
+#projects .panels .txtField{
+    width: 40%;
+    margin: 0 5%;
+}
+
+#projects .panels .txtField h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0%;
+}
+
+#projects .panels .txtField p{
+
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+    color: #828282;
+    margin: 10% 0;
+}
+
+
+#projects .panels .txtField button{
+    border: #2C2B2C 2px solid;
+    border-radius: 24px;
+    padding: 8px 24px;
+    background: transparent;
+
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0%;
+}
+#projects img{
+    border-radius: 0 24px 24px 0;
+}
+
+#projects #boogieNaipeImg{
+    border-radius: 24px 0 0 24px;
+}

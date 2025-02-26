@@ -18,9 +18,9 @@
         <h1>Mano Brown</h1>
         <nav>
             <ul>
-                <li>Sobre</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <a href="#about"><li>Sobre</li></a>
+                <a href="#projects"><li>Projetos</li></a>
+                <a href=""><li>Contato</li></a>
             </ul>
         </nav>
     </header>
@@ -47,7 +47,55 @@
         *Quando a imagem e a legenda juntas formam uma única unidade de conteúdo relacionado  -->
         </section>
 
-        
+        <section id="projects">
+            <div class="projectsTitle">
+                <h2>Projetos</h2>
+            </div>
+            <figure class="panels">
+                <div class="txtField">
+                    <h3>Mano a Mano</h3>
+                    <p>Mano a Mano é um podcast brasileiro do gênero sociedade lançado em agosto de 2021. Apresentado pelo cantor e compositor Mano Brown, é uma produção assinada pelo Spotify Studios.</p>
+                    <button>Ver Projeto</button>
+                </div>
+                <img src="./assets/manoAMano.png" alt="imagem do podcast mano a mano">
+            </figure>
+
+            <figure class="panels">
+                <img id="boogieNaipeImg" src="./assets/boogieNaipe.png" alt="imagem do podcast mano a mano">
+                <div class="txtField">
+                    <h3>Boogie Naipe</h3>
+                    <p>Show baseado no repertório do CD lançado em 2016. Estreou em 2017 no Credicard Hall e segue circulando em festivais e capitais brasileiras. Em 2018, foi premiado pela APCA como o melhor do ano.</p>
+                    <button>Ver Projeto</button>
+                </div>
+            </figure>
+
+            <figure class="panels">
+                <div class="txtField">
+                    <h3>Racionais MC's</h3>
+                    <p>O grupo é o maior do rap no Brasil e um dos mais influentes, com músicas que denunciam a violência, o racismo e a exclusão social enfrentados por jovens negros e pobres das periferias.</p>
+                    <button>Ver Projeto</button>
+                </div>
+                <img src="./assets/ravionaisMCs.png" alt="imagem do podcast mano a mano">
+            </figure>
+        </section>
+
+        <section class="contact">
+            <h2>Contato</h2>
+            <div class="formInput">
+                <label for="">Nome</label>
+                <input type="text">
+            </div>
+            <div class="formInput">
+                <label for="">Email</label>
+                <input type="text">
+            </div>
+            <div class="formInput">
+                <label for="">Mensagem</label>
+                <input type="text">
+            </div>
+            <button>Enviar</button>
+        </section>
+
     </main>
     
     <footer></footer>
